@@ -9,7 +9,7 @@ var $ = require('gulp-load-plugins')();
 gulp.task('lint', function() {
   return gulp.src([
       './*.js',
-      './*.html'
+      './*.html',
       'gulpfile.js'
     ])
     // JSCS has not yet a extract option
@@ -36,4 +36,4 @@ gulp.task('html', function() {
 gulp.task('watch', function() {
   gulp.watch(['./*.html','./*.js'], ['html']);
 });
-gulp.task('elements-webserver', ['connect', 'watch']);
+gulp.task('webserver', ['connect', 'watch']);
