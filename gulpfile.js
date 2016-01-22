@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 var $ = require('gulp-load-plugins')();
 
-
 // Lint JavaScript files
 gulp.task('lint', function() {
   return gulp.src([
