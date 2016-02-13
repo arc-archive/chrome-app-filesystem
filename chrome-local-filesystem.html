@@ -1,4 +1,4 @@
-<link rel="import" href="../filesystem-behavior/filesystem-app-behavior.html">
+<link rel="import" href="../filesystem-behavior/web-filesystem-behavior.html">
 <!--
 @license
 Copyright 2016 Pawel Psztyc, The ARC team
@@ -17,44 +17,44 @@ the License.
 -->
 
 <!--
-`chrome-app-filesystem` is an element to read and write to files using chrome
- filesystem API.
+`chrome-local-filesystem` is an element to read and write to loacl web filesystem.
 
-The app that is using this element must have `fileSystem` permission:
+The app that is using this element can have `unlimitedStorage` permission:
 
 ```json
 "permissions": [
   ...,
   {
-    "fileSystem": ["write"]
+    "unlimitedStorage"
   }
 ],
 ```
 
-The `chrome-app-filesystem` element don't have it's own UI. It's only a helper element to us
-in your app's logic.
+The `chrome-local-filesystem` element don't have it's own UI. It's only a helper element to use
+in app's logic.
 
 
 Example:
 
-<chrome-app-filesystem
+<chrome-local-filesystem
+  quota="52428800"
   content="{{fileData}}"
-  readAs="json"
-  file-name="my-file.json"
-  on-read="fileReadHandler"
+  mime="application/json"
+  filename="my-file.json"
+  on-file-read="fileReadHandler"
   on-save="fileSaveHandler"
-  on-error="fileErrorHandler"></chrome-app-filesystem>
+  on-error="fileErrorHandler"></chrome-local-filesystem>
 
 @group Chrome Apps Elements
-@element chrome-app-filesystem
+@element chrome-local-filesystem
 -->
-<dom-module id="chrome-app-filesystem">
+<dom-module id="chrome-local-filesystem">
   <template>
     <style>
       :host {
-        display: none;
+        display: block;
       }
     </style>
   </template>
 </dom-module>
-<script src="chrome-app-filesystem.js"></script>
+<script src="chrome-local-filesystem.js"></script>
