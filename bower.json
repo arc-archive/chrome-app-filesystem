@@ -2,10 +2,9 @@
   "name": "chrome-app-filesystem",
   "version": "1.1.1",
   "license": "LICENSE.txt",
-  "description": "A Chrom filesystem API in a web component.",
+  "description": "A Chrome filesystem API in a web component.",
   "authors": [
-    "Pawel Psztyc",
-    "Advanced REST client team"
+    "Pawel Psztyc"
   ],
   "keywords": [
     "web-components",
@@ -19,7 +18,7 @@
     "url": "git://github.com/jarrodek/chrome-app-filesystem.git"
   },
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.1.0",
+    "polymer": "Polymer/polymer#^1.2.0",
     "filesystem-behavior": "jarrodek/filesystem-behavior#latest"
   },
   "devDependencies": {
