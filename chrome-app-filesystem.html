@@ -35,8 +35,8 @@ The `chrome-app-filesystem` element don't have it's own UI. It's only a helper e
 in your app's logic.
 
 
-Example:
-
+### Example:
+```
 <chrome-app-filesystem
   content="{{fileData}}"
   readAs="json"
@@ -44,6 +44,7 @@ Example:
   on-file-read="fileReadHandler"
   on-file-write="fileSaveHandler"
   on-error="fileErrorHandler"></chrome-app-filesystem>
+```
 
 @group Chrome Apps Elements
 @element chrome-app-filesystem

@@ -15,16 +15,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jarrodek/chrome-app-filesystem.git"
+    "url": "git://github.com/advanced-rest-client/chrome-app-filesystem.git"
   },
   "dependencies": {
     "polymer": "Polymer/polymer#^1.2.0",
-    "filesystem-behavior": "jarrodek/filesystem-behavior#latest"
+    "filesystem-behavior": "advanced-rest-client/filesystem-behavior#master"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
     "paper-styles": "PolymerElements/paper-styles#^1.0.4"
   },
-  "main": "chrome-app-filesystem.html",
+  "main": [
+    "chrome-app-filesystem.html",
+    "chrome-local-filesystem.html",
+    "chrome-sync-filesystem.html"
+  ],
   "ignore": []
 }

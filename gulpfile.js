@@ -1,8 +1,10 @@
 'use strict';
 
 var gulp = require('gulp');
-var connect = require('gulp-connect');
 var $ = require('gulp-load-plugins')();
+var connect = require('gulp-connect');
+
+require('./tasks/release.js');
 
 // Lint JavaScript files
 gulp.task('lint', function() {
@@ -23,7 +25,7 @@ gulp.task('lint', function() {
 });
 gulp.task('connect', function() {
   connect.server({
-    root: [__dirname + '/'],
+    root: [__dirname + '/', __dirname + '../'],
     livereload: true,
     port: 8888
   });

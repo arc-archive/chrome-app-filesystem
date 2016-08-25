@@ -8,10 +8,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/jarrodek/chrome-app-filesystem.git"
+		"url": "git://github.com/advanced-rest-client/chrome-app-filesystem.git"
 	},
 	"bugs": {
-		"url": "https://github.com/jarrodek/chrome-app-filesystem/issues"
+		"url": "https://github.com/advanced-rest-client/chrome-app-filesystem/issues"
 	},
 	"keywords": [
 		"web-components",
@@ -30,7 +30,13 @@
 		"gulp-jscs-stylish": "^1.1.2",
 		"gulp-jshint": "^1.6.3",
 		"gulp-load-plugins": "^1.1.0",
-		"jshint-stylish": "^2.0.0"
+		"jshint-stylish": "^2.0.0",
+    "conventional-github-releaser": "^1.1.1",
+    "gulp-conventional-changelog": "^1.1.0",
+    "gulp-bump": "^2.1.0",
+    "gulp-git": "^1.7.1",
+    "run-sequence": "^1.1.5",
+    "gulp-util": "^3.0.7"
 	},
 	"engines": {
 		"node": ">=0.10.0"

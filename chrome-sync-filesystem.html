@@ -36,8 +36,9 @@ The `chrome-sync-filesystem` element don't have it's own UI. It's only a helper 
 in app's logic.
 
 
-Example:
+### Example:
 
+```
 <chrome-sync-filesystem
   quota="52428800"
   content="{{fileData}}"
@@ -46,6 +47,7 @@ Example:
   on-file-read="fileReadHandler"
   on-file-write="fileSaveHandler"
   on-error="fileErrorHandler"></chrome-sync-filesystem>
+```
 
 @group Chrome Apps Elements
 @element chrome-local-filesystem

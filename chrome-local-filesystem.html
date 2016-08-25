@@ -34,8 +34,9 @@ The `chrome-local-filesystem` element don't have it's own UI. It's only a helper
 in app's logic.
 
 
-Example:
+### Example:
 
+```
 <chrome-local-filesystem
   quota="52428800"
   content="{{fileData}}"
@@ -44,6 +45,7 @@ Example:
   on-file-read="fileReadHandler"
   on-file-write="fileSaveHandler"
   on-error="fileErrorHandler"></chrome-local-filesystem>
+```
 
 @group Chrome Apps Elements
 @element chrome-local-filesystem
