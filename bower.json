@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "polymer": "Polymer/polymer#^1.2.0",
-    "filesystem-behavior": "advanced-rest-client/filesystem-behavior#master"
+    "filesystem-behavior": "advanced-rest-client/filesystem-behavior#^1.1.6"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
