@@ -1,6 +1,6 @@
 {
 	"name": "chrome-app-filesystem",
-	"version": "1.1.3",
+	"version": "1.1.4",
   "description": "A Chrom filesystem API in a web component.",
 	"author": "Pawel Psztyc, The ARC team <jarrodek@gmail.com>",
 	"scripts": {
